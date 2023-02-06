@@ -1,0 +1,183 @@
+@import "nullstyle";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+body {
+  background: #e7f6ff;
+  min-height: 100vh;
+  padding-top: 86px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.App {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 45px;
+}
+svg {
+  width: 10px;
+  height: 10px;
+}
+.header {
+  padding: 45px 0;
+  &__logo-img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__undertitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+  &__logo-text {
+    margin-left: 16px;
+  }
+  &__desc {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9d9d9d;
+  }
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #a7a3a3;
+  }
+}
+.additions {
+  width: 200px;
+  &__price {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5c5c5c;
+  }
+}
+.cards {
+  padding: 20px 0;
+  &__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  &__body {
+    .row {
+      row-gap: 30px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: inline-block;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #f3f3f3;
+    border-radius: 40px;
+  }
+  &__like {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 30px;
+    top: 30px;
+  }
+
+  &__img {
+    width: 133px;
+    height: 112px;
+    img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__desc {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 14px;
+    color: #000000;
+    max-width: 150px;
+  }
+
+  &__price {
+  }
+}
+.row {
+}
+.price {
+  &__text {
+    max-width: 150px;
+  }
+
+  &__desc {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    color: #bdbdbd;
+  }
+
+  &__count {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #000000;
+  }
+
+  &__add {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
