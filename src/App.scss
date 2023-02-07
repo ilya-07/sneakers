@@ -1,5 +1,8 @@
 @import "nullstyle";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Inter";
+}
 body {
   background: #e7f6ff;
   min-height: 100vh;
@@ -21,6 +24,7 @@ body {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 45px;
+  position: relative;
 }
 svg {
   width: 10px;
@@ -91,6 +95,19 @@ svg {
 }
 .cards {
   padding: 20px 0;
+  &__input {
+    width: 80%;
+  }
+  &__search {
+    width: 250px;
+    height: 45px;
+    border: 1px solid #f3f3f3;
+    border-radius: 10px;
+    padding: 15px 40px;
+    img {
+      cursor: pointer;
+    }
+  }
   &__title {
     font-family: "Inter";
     font-style: normal;
@@ -180,4 +197,113 @@ svg {
     border-radius: 5px;
     overflow: hidden;
   }
+}
+.drawer {
+  display: flex;
+  flex-direction: column;
+  &__btn {
+    background: #9dd558;
+    border-radius: 18px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #ffffff;
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    div {
+      width: auto;
+      border: 1px dashed #000;
+      flex: 1;
+      position: relative;
+      top: 4px;
+      margin: 0 5px;
+    }
+  }
+  padding: 30px;
+  position: absolute;
+  width: 385px;
+  right: 0;
+  // top: 0;
+  // z-index: 2;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -10px 5px 24px rgba(0, 0, 0, 0.1);
+}
+.overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.cart {
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  &__tiem {
+    background: #ffffff;
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  &__add-close {
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 70px;
+    height: 70px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__desc {
+  }
+
+  &__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 150px;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+
+  &__price {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #000000;
+  }
+}
+.row {
 }
